@@ -75,7 +75,7 @@ CREATE TABLE `episodes` (
     `episode` int NOT NULL,
     `discription` varchar(2000) NOT NULL,
     `img` varchar(255) DEFAULT NULL,
-    `air date` date NOT NULL,
+    `air date` date DEFAULT NULL,
     PRIMARY KEY (`id`),
     KEY `series_id` (`series_id`),
     CONSTRAINT `episodes_ibfk_1` FOREIGN KEY (`series_id`) REFERENCES `series` (`id`)
