@@ -1,0 +1,202 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family: system-ui;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+
+// roots
+:root {
+    --darkblue: #1A202C;
+    --darkred: #9B2C2C;
+    --white: #f8fafc;
+  }
+
+* {
+    color: var(--darkblue);
+}
+
+h1 {
+    font-size: 10rem;
+    font-weight: 300;
+    line-height: 1.2;
+    font-family: system-ui;
+}
+
+.accent {
+    background-color: var(--darkred);
+    width: 70%;
+    height: 7px;
+    margin-top: -10px;
+    border-radius: 5px;
+}
+
+.header {
+    background-color: var(--darkblue);
+    color: var(--white);
+}
+
+.nav-link {
+    color: var(--white);
+
+    &:hover {
+        color: var(--darkred);
+    }
+}
+
+main {
+    width: 60rem;
+    margin: auto;
+}
+
+.episodes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .episodes {
+      flex-direction: column;
+    }
+    .episode {
+        margin: auto;
+    }
+}
+
+.episode, .episode_image {
+    width: 20rem;
+}
+
+.accent2 {
+    background-color: var(--darkred);
+    width: 4%;
+    height: 7px;
+    margin-top: -10px;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+}
+
+h4, .episode_code {
+    font-size: 16px;
+    color: grey;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.auth_title {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+button {
+    background-color: var(--darkblue);
+    color: var(--white);
+    border: 1px solid var(--darkblue);
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: var(--darkred);
+    color: var(--white);
+}
+
+.text-link {
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--darkblue);
+    
+    &:hover {
+        color: #9B2C2C;
+        text-decoration: underline;
+    }
+}
+
+.personage {
+    text-align: center;
+}
+
+.personage_img {
+    width: 10rem;
+    border-radius: 5rem;
+    margin: 1.5rem;
+}
+
+.cast {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .cast {
+      flex-direction: column;
+    }
+    .personage {
+        margin: auto;
+    }
+}
+
+.episode2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.episode_info2 {
+    width: 38rem;
+    padding: 1rem;
+}
+
+.search {
+    width: 25rem;
+    padding: 0.45rem;
+    margin-right: 2rem;
+    border-color: 3px solid #1A202C;
+}
+
+.zoeken {
+    width:  33.5rem;
+    margin: auto;
+    justify-content: center;
+}
+
+.timeline {
+    width: 32rem;
+    margin: auto;
+}
+
+// .dark {
+//     background-color: var(--darkblue);
+//     color: var(--white);
+// }
+
+.form-group {
+    margin: 0.8rem 2rem;
+    min-width: 25rem;
+}
+
+.title-card {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.form-flex {
+    display: flex;
+    justify-content: space-between;
+}
