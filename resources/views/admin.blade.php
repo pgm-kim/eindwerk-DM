@@ -13,7 +13,7 @@
             <div class="form-flex">
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" value="{{ $episode->name }}">
                 </div >
                 <div class="form-group">
                         <label for="series">Choose a serie</label><br>
@@ -27,17 +27,17 @@
                 <div class="form-flex">
                 <div class="form-group">
                     <label for="season">season</label>
-                    <input type="number" class="form-control" id="season" name="season" placeholder="Enter season">
+                    <input type="number" class="form-control" id="season" name="season" placeholder="Enter season" value="{{ $episode->season }}">
                 </div>
                 <div class="form-group">
                     <label for="episode">episode</label>
-                    <input type="number" class="form-control" id="episode" name="episode" placeholder="Enter episode">
+                    <input type="number" class="form-control" id="episode" name="episode" placeholder="Enter episode" value="{{ $episode->episode }}">
                 </div>
             </div>
             <div class="form-flex">
             <div class="form-group">
                 <label for="air date">air date</label>
-                <input type="date" class="form-control" id="air date" name="air date" placeholder="Enter air date">
+                <input type="date" class="form-control" id="air date" name="air date" placeholder="Enter air date" value="{{ $episode->airdate }}">
             </div>
             <div class="form-group">
                 <label for="directed by">directed by</label>
@@ -46,11 +46,11 @@
             </div>
             <div class="form-group">
                 <label for="description">description</label>
-                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                <textarea class="form-control" id="description" name="description" rows="3" value="{{!! $episode->description !!}}"></textarea>
             </div>
             <div class="form-group">
                 <label for="image">Image</label>
-                <input type="file" class="form-control-file" id="image" name="image">
+                <input type="file" class="form-control-file" id="image" name="image" value="{{ $episode->img }}">
             </div>
             
             <div class="title-card">
