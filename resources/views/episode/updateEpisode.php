@@ -27,17 +27,17 @@
                 <div class="form-flex">
                 <div class="form-group">
                     <label for="season">season</label>
-                    <input type="number" class="form-control" id="season" name="season" placeholder="Enter season">
+                    <input type="number" class="form-control" id="season" name="season" placeholder="Enter season" value="{{ $episode->season }}">
                 </div>
                 <div class="form-group">
                     <label for="episode">episode</label>
-                    <input type="number" class="form-control" id="episode" name="episode" placeholder="Enter episode">
+                    <input type="number" class="form-control" id="episode" name="episode" placeholder="Enter episode" value="{{ $episode->episode }}">
                 </div>
             </div>
             <div class="form-flex">
             <div class="form-group">
                 <label for="air date">air date</label>
-                <input type="date" class="form-control" id="air date" name="air date" placeholder="Enter air date">
+                <input type="date" class="form-control" id="air date" name="air date" placeholder="Enter air date" value="{{ $episode->airDate }}">
             </div>
             <div class="form-group">
                 <label for="directed by">directed by</label>
@@ -46,44 +46,39 @@
             </div>
             <div class="form-group">
                 <label for="description">description</label>
-                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                <textarea class="form-control" id="description" name="description" rows="3">{!! $episode->description !!}</textarea>
             </div>
             <div class="form-group">
                 <label for="image">Image</label>
-                <input type="file" class="form-control-file" id="image" name="image">
+                 <input type="file" class="form-control-file" id="image" name="image" value="{{ $episode->img }}"> <!-- klopt niet omdat je een image moet uploaden en geen url code -->
             </div>
             
             <div class="title-card">
         <h2>2 the cast</h2>
         <div class="accent2"></div>
     </div>
-    <div class="form-group">
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> I have a bike</label><br>
-    </div>
-    <div class="form-group">
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> I have a bike</label><br>
-    </div>
-    <div class="form-group">
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> I have a bike</label><br>
-    </div>
-    <div class="form-group">
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> I have a bike</label><br>
-    </div>
-    <div class="form-group">
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1"> I have a bike</label><br>
-    </div>
-  
+    <h2>2 the cast</h2>
+        <div class="accent2"></div>
+            <div class="form-flex">
+            <div class="form-group">
+                <label>    
+                    Customer:
+                    <select name="customer_id">
+                        <option value="">{{ __('Select personage...')__ }}</option>
+                    @foreach($personages as $personage)
+                        <option value="{{ $customer->id }}" {{ ($personage->personage_id == $personage->id) ? 'selected' : '' }}>{{ $personage->name }}</option>
+                    @endforeach
+                    </select>
+                </label>
+            </div>
+            </div>
   
 
         </form>
-            <button type="submit" class="button-right">next step</button>
+            <button type="submit" class="button-right">upload</button>
             </div>
         </div>
+
 
 <!-- <div class="card">
     <div class="title-card">

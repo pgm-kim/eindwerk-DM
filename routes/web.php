@@ -26,5 +26,17 @@ Route::get('/episodes', [App\Http\Controllers\HomeController::class, 'episodes']
 Route::get('/timeline', [App\Http\Controllers\HomeController::class, 'timeline'])->name('timeline');
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin');
 
+
+Route::get('/episode/create', [EpisodeController::class, 'edit']);
+Route::post('/episode/create', [EpisodeController::class, 'save']);
+
+Route::get('/episode', [EpisodeController::class, 'index']);
+Route::get('/episode/{id}', [EpisodeController::class, 'detail']); 
+
+Route::get('/episode/{id}/edit', [EpisodeController::class, 'edit']);
+Route::post('/episode/{id}/edit', [EpisodeController::class, 'save']);
+
+
+
 // Route::get('/project/{id}/edit', [ProjectController::class, 'edit']);
 // Route::post('/project/{id}/edit', [ProjectController::class, 'save']);
