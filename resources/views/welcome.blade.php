@@ -4,7 +4,7 @@
     <body >
     <main>
 <section>
-    <h2>welcome, Grey's fan</h2>
+    <h2>welcome, Grey's fan <span class="accenttext">kim</span></h2>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. <a class="text-link" href="">Grey's anatomy</a>Tempore autem est fugiat! Assumenda quibusdam sequi tempora harum nemo quasi saepe fugit iure odit dolore dignissimos at neque, qui omnis impedit.<a class="text-link" href="">station 19</a>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit.<a class="text-link" href="">private practice</a> Ex qui aspernatur rem, voluptatibus ab ipsam iusto officia nostrum, nobis explicabo laudantium cupiditate id reprehenderit? Voluptatum non assumenda architecto cumque consequatur.
