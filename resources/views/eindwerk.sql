@@ -24,34 +24,14 @@ LOCK TABLES `personages` WRITE;
 
 INSERT INTO `personages` (`id`, `name`, `actor`, `img`)
 VALUES
-
-/* greys anatomy */
     (1,'meredith grey','Ellen Pompeo','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/736567/10f7cd089a02f1b9109055d2e539c7b1/330x330-Q90_10f7cd089a02f1b9109055d2e539c7b1.jpg'),
+	(2,'addison montgomery','Kate Walsh','https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
+	(3,'amelia shepherd','Caterina Scorsone','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/753071/233e6421ef517af0e7b518c2a21e186e/330x330-Q90_233e6421ef517af0e7b518c2a21e186e.jpg'),
 	(4,'owen hunt','Kevin McKidd','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/736363/da564f9e7010926c34c59de5f2bc3381/330x330-Q90_da564f9e7010926c34c59de5f2bc3381.jpg'),
 	(5,'miranda bailey','Chandra Wilson','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/736747/432e9ec8c2ab686331dc1ef637dcc2b5/330x330-Q90_432e9ec8c2ab686331dc1ef637dcc2b5.jpg'),
 	(6,'jo wilson','Camilla Luddington','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/736806/c8bd81ff567f3da65e33debcb443d35c/330x330-Q90_c8bd81ff567f3da65e33debcb443d35c.jpg'),
 	(7,'teddy altman','Kim Raver','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/2169675/df4edd3896802b32a79fa208bcc16742/330x330-Q90_df4edd3896802b32a79fa208bcc16742.jpg'),
-	(8,'levi schmitt','Jake Borelli','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/2848454/9d515287b40572175d374e126be226c5/330x330-Q90_9d515287b40572175d374e126be226c5.jpg'),
-/*station 19*/
-    (9, 'ben warren', 'Jason George', 'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119594/7ae183bb5c6d34bde474e391c7a6cd8b/330x330-Q90_7ae183bb5c6d34bde474e391c7a6cd8b.jpg'),
-    (10,'maya bishop', 'Danielle Savre', 'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119627/3c7309a6717b62bba6239ab7e01b92d0/330x330-Q90_3c7309a6717b62bba6239ab7e01b92d0.jpg'),
-    (11,'Andy Herrera', 'Jaina Lee Ortiz', 'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119586/2463f3c2aae6c391468cc8ef1c7ec66d/330x330-Q90_2463f3c2aae6c391468cc8ef1c7ec66d.jpg'),
-    (12,'Jack Gibson', 'Grey Damon', 'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119597/1090a9d7fa479cf490b51931de2b046a/330x330-Q90_1090a9d7fa479cf490b51931de2b046a.jpg'),
-    (13, 'Victoria Hughes', 'Barrett Doss', 'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119600/cd5322ccb471ed912d6116ea5bb07945/330x330-Q90_cd5322ccb471ed912d6116ea5bb07945.jpg'),
-    (14, 'Travis Montgomery', 'Jay Hayden', 'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119608/2940c4bddf85f1b19e5c8ca30416bc86/330x330-Q90_2940c4bddf85f1b19e5c8ca30416bc86.jpg'),
-    (15, 'Carina Deluca', 'stefania spaminato', 'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/3845562/3e0458a28d0dd99208fe694512cb820a/330x330-Q90_3e0458a28d0dd99208fe694512cb820a.jpg'),
-    /*private practice */
-    (2,'addison montgomery','Kate Walsh','https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
-    (3,'amelia shepherd','Caterina Scorsone','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/753071/233e6421ef517af0e7b518c2a21e186e/330x330-Q90_233e6421ef517af0e7b518c2a21e186e.jpg'),
-    (16, 'Charlotte King', 'KaDee Strickland', 'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
-    (17, 'pete wilder', 'Tim Daly', 'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
-    (18, 'cooper freedman', 'paul adelstein','https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
-    (19, 'violet turner', 'amy brenneman', 'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
-    (20, 'naomi bennet', 'audra mcdonald', 'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
-    (21, 'jake reilly', 'chris lowell', 'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
-    (22, 'sam bennett', 'taye diggs', 'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'),
-    (23, 'sheldon Wallace', 'brain fallon', 'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png');
-
+	(8,'levi schmitt','Jake Borelli','https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/2848454/9d515287b40572175d374e126be226c5/330x330-Q90_9d515287b40572175d374e126be226c5.jpg');
 
 /*!40000 ALTER TABLE `personages` ENABLE KEYS */;
 UNLOCK TABLES;
