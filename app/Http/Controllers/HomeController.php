@@ -33,10 +33,7 @@ class HomeController extends Controller
     {
         return view('serie');
     }
-    public function timeline()
-    {
-        return view('timeline');
-    }
+    
     public function admin()
     {
         return view('admin');

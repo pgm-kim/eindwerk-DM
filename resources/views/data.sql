@@ -17,7 +17,7 @@ CREATE TABLE `personages` (
   `actor` varchar(255) NOT NULL,
   `img` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 LOCK TABLES `personages` WRITE;
 /*!40000 ALTER TABLE `personages` DISABLE KEYS */;
@@ -115,18 +115,6 @@ VALUES
     ),
     /*private practice */
     (
-        2,
-        'addison montgomery',
-        'Kate Walsh',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
-    ),
-    (
-        3,
-        'amelia shepherd',
-        'Caterina Scorsone',
-        'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/753071/233e6421ef517af0e7b518c2a21e186e/330x330-Q90_233e6421ef517af0e7b518c2a21e186e.jpg'
-    ),
-    (
         16,
         'Charlotte King',
         'KaDee Strickland',
@@ -188,9 +176,9 @@ CREATE TABLE `series` (
     `name` varchar(255) NOT NULL,
     `discription` varchar(2000) NOT NULL,
     `img` varchar(255) DEFAULT NULL,
-    `director` varchar(255) NOT NULL;
+    `director` varchar(255) NOT NULL,
     PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 LOCK TABLES `series` WRITE;
 /*!40000 ALTER TABLE `series` DISABLE KEYS */;
@@ -203,7 +191,7 @@ VALUES
         'Greys Anatomy is an American medical drama television series that premiered on American Broadcasting Company (ABC) as a mid-season replacement on March 27, 2005. The fictional series focuses on the lives of surgical interns, residents, and attending physicians, as they develop into seasoned doctors while trying to maintain personal lives and relationships.',
         'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/show/736573/1c0b0b1b1b1b1b1b1b1b1b1b1b1b1b1b/330x330-Q90_1c0b0b1b1b1b1b1b1b1b1b1b1b1b1b1.jpg',
         'Shonda Rhimes'
-    );
+    ),
     /* Private practice */
     (
         2,
@@ -212,7 +200,7 @@ VALUES
         'Private Practice is an American medical drama television series that aired on ABC from September 26, 2007, to May 22, 2013. The series follows the lives of the doctors and staff of the Oceanside Wellness Center, a fictional holistic medical practice in Los Angeles, California.',
         'https://cdn1.edgedatg.com/aws/v2/abc/PrivatePractice/show/736574/1c0b0b1b1b1b1b1b1b1b1b1b1b1b1b1/330x330-Q90_1c0b0b1b1b1b1b1b1b1b1b1b1b1b1b1.jpg',
         'Shonda Rhimes'
-    );
+    ),
     /* station 19 */
     (
         3,
@@ -238,11 +226,11 @@ CREATE TABLE `episodes` (
     `episode` int NOT NULL,
     `discription` varchar(2000) NOT NULL,
     `img` varchar(255) DEFAULT NULL,
-    `air date` date NOT NULL,
+    `airDate` date NOT NULL,
     PRIMARY KEY (`id`),
     KEY `series_id` (`series_id`),
     CONSTRAINT `episodes_ibfk_1` FOREIGN KEY (`series_id`) REFERENCES `series` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 LOCK TABLES `episodes` WRITE;
 /*!40000 ALTER TABLE `episodes` DISABLE KEYS */;
@@ -296,8 +284,7 @@ VALUES
         1,
         3,
         22,
-        'Addison leaves for warmer climes and to figure things out, Susan visits the clinic, and Cristinas perfect wedding is changed when her and Burkes mothers hit town.' <br> 
-        'Addison is pulled into the case of a high-risk surrogate mother, Susan develops a complication, Izzie struggles with Georges decision, and Ava has surgery that may restore her memory.',
+        'Addison leaves for warmer climes and to figure things out, Susan visits the clinic, and Cristinas perfect wedding is changed when her and Burkes mothers hit town.<br>Addison is pulled into the case of a high-risk surrogate mother, Susan develops a complication, Izzie struggles with Georges decision, and Ava has surgery that may restore her memory.',
         'https://static.wikia.nocookie.net/greysanatomy/images/a/a3/3x22-21.jpg/revision/latest/scale-to-width-down/350?cb=20150401140535',
         '2007-07-03'
     ),
@@ -419,6 +406,7 @@ VALUES
         5,
         5,
         'As the rumor mill around the hospital continues to spiral out of control, Grey Sloan Memorial is flooded with injured firefighters from a nearby wildfire. Maggie struggles to keep things with Andrew professional at work; meanwhile, Jo questions Alexs priorities. Also, Alex decides to make a big step in his life.',
+        'https://static.wikia.nocookie.net/greysanatomy/images/f/f0/16x09-1.jpg/revision/latest/scale-to-width-down/350?cb=20191107191949',
         '2015-11-19'
     ),
     (
@@ -452,7 +440,8 @@ VALUES
         '2021-06-22'
         ),
     (
-        21, 'The Dark Night',
+        21, 
+        'The Dark Night',
         2,
         2,
         13,
@@ -571,7 +560,6 @@ VALUES
         '2013-01-22'
     );
 
-/*!40000 ALTER TABLE `courses` ENABLE KEYS */;
 UNLOCK TABLES;
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

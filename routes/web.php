@@ -23,18 +23,19 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/serie', [App\Http\Controllers\HomeController::class, 'serie'])->name('serie');
 Route::get('/episodes', [App\Http\Controllers\HomeController::class, 'episodes'])->name('episodes');
-Route::get('/timeline', [App\Http\Controllers\HomeController::class, 'timeline'])->name('timeline');
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->name('admin');
 
+Route::get('/serie', [App\Http\Controllers\SerieController::class, 'index']);
+Route::get('/serie/{id}', [App\Http\Controllers\SerieController::class, 'detail']); 
 
-Route::get('/episode/create', [EpisodeController::class, 'edit']);
-Route::post('/episode/create', [EpisodeController::class, 'save']);
+Route::get('/episode/create', [App\Http\Controllers\EpisodeController::class, 'edit']);
+Route::post('/episode/create', [App\Http\Controllers\EpisodeController::class, 'save']);
 
-Route::get('/episode', [EpisodeController::class, 'index']);
-Route::get('/episode/{id}', [EpisodeController::class, 'detail']); 
+Route::get('/episode', [App\Http\Controllers\EpisodeController::class, 'index']);
+Route::get('/episode/{id}', [App\Http\Controllers\EpisodeController::class, 'detail']); 
 
-Route::get('/episode/{id}/edit', [EpisodeController::class, 'edit']);
-Route::post('/episode/{id}/edit', [EpisodeController::class, 'save']);
+Route::get('/episode/{id}/edit', [App\Http\Controllers\EpisodeController::class, 'edit']);
+Route::post('/episode/{id}/edit', [App\Http\Controllers\EpisodeController::class, 'save']);
 
 
 

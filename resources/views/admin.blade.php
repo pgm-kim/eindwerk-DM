@@ -81,7 +81,7 @@
   
 
         </form>
-            <button type="submit" class="button-right">next step</button>
+            <button type="submit" class="button-right">add</button>
             </div>
         </div>
 

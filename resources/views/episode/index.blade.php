@@ -12,7 +12,7 @@
         </section>
         <section>
 
-        <? foreach ($episode as $episode){
+        <? foreach ($episodes as $episode){
     ?>
 <div class="episode2">
     <img src="https://cdn1.edgedatg.com/aws/v2/abc/Station19/video/30440209/b2bfc9c85c68b1078dbd4af30fccd4bf/579x325-Q100_b2bfc9c85c68b1078dbd4af30fccd4bf.jpg" alt="episode image" class="episode_image">
