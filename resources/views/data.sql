@@ -406,6 +406,7 @@ VALUES
         5,
         5,
         'As the rumor mill around the hospital continues to spiral out of control, Grey Sloan Memorial is flooded with injured firefighters from a nearby wildfire. Maggie struggles to keep things with Andrew professional at work; meanwhile, Jo questions Alexs priorities. Also, Alex decides to make a big step in his life.',
+        'https://static.wikia.nocookie.net/greysanatomy/images/f/f0/16x09-1.jpg/revision/latest/scale-to-width-down/350?cb=20191107191949',
         'S190505.jpg',
         '2015-11-19'
     ),
