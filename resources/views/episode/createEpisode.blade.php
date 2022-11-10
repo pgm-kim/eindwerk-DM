@@ -8,7 +8,7 @@
         <h2>1  Information</h2>
         <div class="accent2"></div>
     </div>
-        <form action="/admin" method="POST" enctype="multipart/form-data">
+        <form action="/episode/create" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-flex">
                 <div class="form-group">
@@ -27,17 +27,17 @@
                 <div class="form-flex">
                 <div class="form-group">
                     <label for="season">season</label>
-                    <input type="number" class="form-control" id="season" name="season" placeholder="Enter season" value="{{ $episode->season }}">
+                    <input type="number" class="form-control" id="season" name="season" placeholder="Enter season" value="">
                 </div>
                 <div class="form-group">
                     <label for="episode">episode</label>
-                    <input type="number" class="form-control" id="episode" name="episode" placeholder="Enter episode" value="{{ $episode->episode }}">
+                    <input type="number" class="form-control" id="episode" name="episode" placeholder="Enter episode" value="">
                 </div>
             </div>
             <div class="form-flex">
             <div class="form-group">
                 <label for="air date">air date</label>
-                <input type="date" class="form-control" id="air date" name="air date" placeholder="Enter air date" value="{{ $episode->airDate }}">
+                <input type="date" class="form-control" id="air date" name="air date" placeholder="Enter air date" value="">
             </div>
             <div class="form-group">
                 <label for="directed by">directed by</label>
@@ -46,36 +46,28 @@
             </div>
             <div class="form-group">
                 <label for="description">description</label>
-                <textarea class="form-control" id="description" name="description" rows="3">{!! $episode->description !!}</textarea>
+                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
             </div>
             <div class="form-group">
                 <label for="image">Image</label>
-                 <input type="file" class="form-control-file" id="image" name="image" value="{{ $episode->img }}"> <!-- klopt niet omdat je een image moet uploaden en geen url code -->
+                 <input type="file" class="form-control-file" id="image" name="image" value=""> <!-- klopt niet omdat je een image moet uploaden en geen url code -->
             </div>
             
             <div class="title-card">
         <h2>2 the cast</h2>
         <div class="accent2"></div>
     </div>
-    <h2>2 the cast</h2>
-        <div class="accent2"></div>
             <div class="form-flex">
             <div class="form-group">
-                <label>    
-                    personages:
-                    <select name="customer_id">
-                        <option value="">{{ __('Select personage...')__ }}</option>
-                    @foreach($personages as $personage)
-                        <option value="{{ $customer->id }}" {{ ($personage->personage_id == $personage->id) ? 'selected' : '' }}>{{ $personage->name }}</option>
+                <label>  
+                @foreach($personages as $personage)  
+                    <input type="checkbox" name="personages[]" value="{{ $personage->id }}"> {{ $personage->name }}<br>
                     @endforeach
-                    </select>
                 </label>
             </div>
             </div>
-  
-
-        </form>
             <button type="submit" class="button-right">upload</button>
+        </form>
             </div>
         </div>
 

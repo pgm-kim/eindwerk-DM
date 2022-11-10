@@ -16,6 +16,8 @@ return new class extends Migration
         Schema::create('episode_personage', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->foreignId('episode_id');
+            $table->foreignId('personage_id');
         });
     }
 

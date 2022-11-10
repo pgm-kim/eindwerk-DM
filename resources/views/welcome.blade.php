@@ -4,10 +4,14 @@
     <body >
     <main>
 <section>
-    <h2>welcome, Grey's fan <span class="accenttext">kim</span></h2>
+    <h2>welcome, on your favorite page <span class="accenttext">Grey's fan</span></h2>
     <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <a class="text-link" href="">Grey's anatomy</a>Tempore autem est fugiat! Assumenda quibusdam sequi tempora harum nemo quasi saepe fugit iure odit dolore dignissimos at neque, qui omnis impedit.<a class="text-link" href="">station 19</a>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.<a class="text-link" href="">private practice</a> Ex qui aspernatur rem, voluptatibus ab ipsam iusto officia nostrum, nobis explicabo laudantium cupiditate id reprehenderit? Voluptatum non assumenda architecto cumque consequatur.
+        deze website is voor alle fans van de serie's in the grey's anatomy universum.
+        in the universe bevindt zich het Grey-sloan memorial hospital, een ziekenhuis in Seattle, Washington. deze heeft een eigen serie, <a class="text-link" href="/serie/1">Grey's anatomy</a>. <br><br>
+        naast het ziekenhuis is er ook een brandweerkorps <a class="text-link" href="/serie/3">station 19</a>, Seattle fire department, waar ook een eigen serie van is. 
+        slachtoffers van een brand worden naar grey-sloan memorial hospital. de dokters komen goed overeen met het brandweerkorps<br><br>
+        <a class="text-link" href="/serie/2">private practice</a> is een spin-off van grey's anatomy, waarin de personages van de serie een eigen praktijk beginnen in Los Angeles. de personages zijn niet alleen collegas maar ook goede vrienden en hebben een goede band met elkaar.
+        de privépraktijk is een succes en de dokters hebben het druk met hun patiënten. <br><br>
     </p>
 </section>
 <div>

@@ -28,10 +28,11 @@ Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->nam
 Route::get('/serie', [App\Http\Controllers\SerieController::class, 'index']);
 Route::get('/serie/{id}', [App\Http\Controllers\SerieController::class, 'detail']); 
 
-Route::get('/episode/create', [App\Http\Controllers\EpisodeController::class, 'edit']);
+Route::get('/episode/create', [App\Http\Controllers\EpisodeController::class, 'create']);
 Route::post('/episode/create', [App\Http\Controllers\EpisodeController::class, 'save']);
 
 Route::get('/episode', [App\Http\Controllers\EpisodeController::class, 'index']);
+Route::post('/episode', [App\Http\Controllers\EpisodeController::class, 'filter']);
 Route::get('/episode/{id}', [App\Http\Controllers\EpisodeController::class, 'detail']); 
 
 Route::get('/episode/{id}/edit', [App\Http\Controllers\EpisodeController::class, 'edit']);

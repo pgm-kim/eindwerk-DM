@@ -8,7 +8,7 @@
         <img src="" alt="">
         <section><h2><?= $serie->name ?></h2>
         <div class="accent2"></div>
-        <p><?= $serie->discription ?></p>
+        <p><?= $serie->description ?></p>
         </section>
         <h2>info</h2>
         <div class="accent2"></div>

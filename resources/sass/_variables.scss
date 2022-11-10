@@ -22,6 +22,10 @@ p {
     font-size: 16px;
 }
 
+body {
+    padding-bottom: 3rem;
+}
+
 .accenttext {
     color: var(--darkred);
 }
@@ -63,6 +67,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    padding-bottom: 3rem;
 }
 
 @media (max-width: 800px) {
@@ -76,6 +81,7 @@ main {
 
 .episode, .episode_image {
     width: 20rem;
+    max-height: 13rem;
 }
 
 .accent2 {
@@ -227,6 +233,7 @@ button {
     
 }
 
+
 .btn_center {
     margin: auto;
     padding: 1rem;
@@ -235,6 +242,13 @@ button {
 }
 
 .imgbigg {
+    margin: 0 auto;
     width: 35rem;
     border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .imgbigg {
+        width: 25rem;
+    }
 }

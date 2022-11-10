@@ -24,144 +24,145 @@ LOCK TABLES `personages` WRITE;
 
 INSERT INTO `personages` (`id`, `name`, `actor`, `img`)
 VALUES
-    (
+        (
         1,
         'meredith grey',
         'Ellen Pompeo',
-        'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/736567/10f7cd089a02f1b9109055d2e539c7b1/330x330-Q90_10f7cd089a02f1b9109055d2e539c7b1.jpg'
+        'GA1.jpg'
     ),
-	(
+    (
         2,
         'addison montgomery',
         'Kate Walsh',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.npg'
     ),
-	(
+    (
         3,
         'amelia shepherd',
         'Caterina Scorsone',
-        'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/753071/233e6421ef517af0e7b518c2a21e186e/330x330-Q90_233e6421ef517af0e7b518c2a21e186e.jpg'
+        'GA3.jpg'
     ),
-	(
+    (
         4,
         'owen hunt',
         'Kevin McKidd',
-        'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/736363/da564f9e7010926c34c59de5f2bc3381/330x330-Q90_da564f9e7010926c34c59de5f2bc3381.jpg'
+        'GA4.jpg'
     ),
-	(
+    (
         5,
         'miranda bailey',
         'Chandra Wilson',
-        'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/736747/432e9ec8c2ab686331dc1ef637dcc2b5/330x330-Q90_432e9ec8c2ab686331dc1ef637dcc2b5.jpg'
+        'GA5.jpg'
     ),
-	(
+    (
         6,
         'jo wilson',
         'Camilla Luddington',
-        'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/736806/c8bd81ff567f3da65e33debcb443d35c/330x330-Q90_c8bd81ff567f3da65e33debcb443d35c.jpg'
+        'GA6.jpg'
     ),
-	(
+    (
         7,
         'teddy altman',
         'Kim Raver',
-        'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/2169675/df4edd3896802b32a79fa208bcc16742/330x330-Q90_df4edd3896802b32a79fa208bcc16742.jpg'
+        'GA7.jpg'
     ),
-	(
+    (
         8,
         'levi schmitt',
         'Jake Borelli',
-        'https://cdn1.edgedatg.com/aws/v2/abc/GreysAnatomy/person/2848454/9d515287b40572175d374e126be226c5/330x330-Q90_9d515287b40572175d374e126be226c5.jpg'
+        'GA8.jpg'
     ),
     /*station 19*/
     (
         9,
         'ben warren', 'Jason George',
-        'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119594/7ae183bb5c6d34bde474e391c7a6cd8b/330x330-Q90_7ae183bb5c6d34bde474e391c7a6cd8b.jpg'
+        'S199.jpg'
     ),
     (10,
     'maya bishop',
     'Danielle Savre',
-    'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119627/3c7309a6717b62bba6239ab7e01b92d0/330x330-Q90_3c7309a6717b62bba6239ab7e01b92d0.jpg'
+    'S1910.jpg'
     ),
     (
         11,
         'Andy Herrera',
         'Jaina Lee Ortiz',
-        'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119586/2463f3c2aae6c391468cc8ef1c7ec66d/330x330-Q90_2463f3c2aae6c391468cc8ef1c7ec66d.jpg'
+        'S1911.jpg'
     ),
     (
         12,
         'Jack Gibson',
         'Grey Damon',
-        'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119597/1090a9d7fa479cf490b51931de2b046a/330x330-Q90_1090a9d7fa479cf490b51931de2b046a.jpg'
+        'S1912.jpg'
     ),
     (
         13,
         'Victoria Hughes',
         'Barrett Doss',
-        'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119600/cd5322ccb471ed912d6116ea5bb07945/330x330-Q90_cd5322ccb471ed912d6116ea5bb07945.jpg'
+        'S1913.jpg'
     ),
     (
         14,
         'Travis Montgomery',
         'Jay Hayden',
-        'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/2119608/2940c4bddf85f1b19e5c8ca30416bc86/330x330-Q90_2940c4bddf85f1b19e5c8ca30416bc86.jpg'
+        'S1914.jpg'
     ),
     (
         15,
         'Carina Deluca',
         'stefania spaminato',
-        'https://cdn1.edgedatg.com/aws/v2/abc/Station19/person/3845562/3e0458a28d0dd99208fe694512cb820a/330x330-Q90_3e0458a28d0dd99208fe694512cb820a.jpg'
+        'S1915.jpg'
     ),
     /*private practice */
     (
         16,
         'Charlotte King',
         'KaDee Strickland',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.png'
     ),
     (
         17,
         'pete wilder',
         'Tim Daly',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.png'
     ),
     (
         18,
         'cooper freedman',
         'paul adelstein',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.png'
     ),
     (
         19,
         'violet turner',
         'amy brenneman',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.png'
     ),
     (
         20,
         'naomi bennet',
         'audra mcdonald',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.png'
     ),
     (
         21,
         'jake reilly',
         'chris lowell',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.png'
     ),
     (
         22,
         'sam bennett',
         'taye diggs',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.png'
     ),
     (
         23,
         'sheldon Wallace',
         'brain fallon',
-        'https://www.gfmd.org/files/default_images/blank_profile_photo_512.png'
+        'GU00.png'
     );
+
 
 /*!40000 ALTER TABLE `personages` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -174,7 +175,7 @@ CREATE TABLE `series` (
     `id` int NOT NULL AUTO_INCREMENT,
     `premiereDate` date NOT NULL,
     `name` varchar(255) NOT NULL,
-    `discription` varchar(2000) NOT NULL,
+    `description` varchar(2000) NOT NULL,
     `img` varchar(255) DEFAULT NULL,
     `director` varchar(255) NOT NULL,
     PRIMARY KEY (`id`)
@@ -182,7 +183,7 @@ CREATE TABLE `series` (
 
 LOCK TABLES `series` WRITE;
 /*!40000 ALTER TABLE `series` DISABLE KEYS */;
-INSERT INTO `series` (`id`, `premiereDate`, `name`, `discription`, `img`, `director`)
+INSERT INTO `series` (`id`, `premiereDate`, `name`, `description`, `img`, `director`)
 VALUES
     (
         1,
@@ -224,7 +225,7 @@ CREATE TABLE `episodes` (
     `series_id` int NOT NULL,
     `season` int NOT NULL,
     `episode` int NOT NULL,
-    `discription` varchar(2000) NOT NULL,
+    `description` varchar(2000) NOT NULL,
     `img` varchar(255) DEFAULT NULL,
     `airDate` date NOT NULL,
     PRIMARY KEY (`id`),
@@ -234,7 +235,7 @@ CREATE TABLE `episodes` (
 
 LOCK TABLES `episodes` WRITE;
 /*!40000 ALTER TABLE `episodes` DISABLE KEYS */;
-INSERT INTO `episodes` (`id`, `title`, `series_id`, `season`, `episode`, `discription`, `img`, `airDate`)
+INSERT INTO `episodes` (`id`, `title`, `series_id`, `season`, `episode`, `description`, `img`, `airDate`)
 VALUES
 
 /* grey's anatomy */
@@ -245,7 +246,7 @@ VALUES
          16,
          9,
          'Jo becomes a safe haven volunteer and gets a call that a baby has been dropped off at Station 19. Meanwhile, Meredith moves forward with her life after facing the medical board. Jackson takes a big step in his budding romance with Vic, while Bailey and Amelia swap pregnancy updates.',
-         'https://static.wikia.nocookie.net/greysanatomy/images/f/f0/16x09-1.jpg/revision/latest/scale-to-width-down/350?cb=20191107191949',
+         'GA1609.jpg',
          '2019-11-21'
     ),
     (
@@ -255,7 +256,7 @@ VALUES
         14,
         13,
         'Seattle Firefighters Ben Warren and Andy Herrera head to Grey Sloan after rescuing two boys that are injured in a house fire. With one of the boys lives literally in Andys hands, her skills are put to the test. Meanwhile, the doctors are hard at work on their projects for the Grey Sloan Surgical Innovation Contest and Amelia brings Tom Koracick in to consult on her and Alexs patient.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/8/84/14x13-1.jpg/revision/latest/scale-to-width-down/350?cb=20180209191547',
+        'GA1413.jpg',
         '2018-03-01'
     ),
     (
@@ -265,8 +266,8 @@ VALUES
         18,
         5,
         'The Grey Sloan doctors spring into action after an explosion rocks Seattle, with the incoming trauma hitting close to home. Owen experiences PTSD after he hears the explosion, while his sister Megan enlists help from Winston and Hayes in confidence. In Minnesota, Meredith and Amelia meet up with a familiar face who assists in their study.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/1/1d/18x05-1.jpg/revision/latest/scale-to-width-down/350?cb=20211025212828',
-        '2021-11-11'
+        'GA1805.jpg',
+        '2019-12-19'
     ),
     (
         4,
@@ -275,7 +276,7 @@ VALUES
         15,
         23,
         'Maggie treats one of Station 19s own, and Jo learns a hard lesson. Meanwhile, when working with a family seeking asylum, Meredith makes a call that could jeopardize her career.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/a/a6/15x23-1.jpg/revision/latest/scale-to-width-down/350?cb=20190423220005',
+        'GA1523.jpg',
         '2019-07-02'
     ),
     (
@@ -285,7 +286,7 @@ VALUES
         3,
         22,
         'Addison leaves for warmer climes and to figure things out, Susan visits the clinic, and Cristinas perfect wedding is changed when her and Burkes mothers hit town.<br> <br> Addison is pulled into the case of a high-risk surrogate mother, Susan develops a complication, Izzie struggles with Georges decision, and Ava has surgery that may restore her memory.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/a/a3/3x22-21.jpg/revision/latest/scale-to-width-down/350?cb=20150401140535',
+        'GA0322.jpg',
         '2007-07-03'
     ),
     (
@@ -295,7 +296,7 @@ VALUES
         5,
         15,
         'Addison needs Derek to operate on Archer, but after consultation, Derek cannot do it. Following a push from Sam, Derek changes his mind, even going as far as calling Archer a coward to let him do it. Cristina finds out Owen was previously engaged, and finds out more about Owens past. Izzie arranges a game for the interns, in an attempt to remind them how much they enjoy medicine.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/e/ee/5x15-28.jpg/revision/latest/scale-to-width-down/350?cb=20180401130726',
+        'GA0515.jpg',
         '2009-02-12'
     ),
     (
@@ -305,7 +306,7 @@ VALUES
         7,
         3,
         'When Derek receives an unexpected and unwelcome visit from his estranged sister, Amelia, issues between the siblings -- both past and present -- come to the surface; the Chief tries to help Alex when he notices that hes afraid to use the elevators after his near-fatal shooting; and Meredith and Derek continue their efforts to ease Cristina back into surgery after her post-traumatic stress.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/9/99/7x03-28.jpg/revision/latest/scale-to-width-down/350?cb=20180403193155',
+        'GA0703.jpg',
         '2010,10,07'
     ),
     (
@@ -315,7 +316,7 @@ VALUES
         6,
         24,
         'Cristina and Merediths surgical skills are put to the ultimate test.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/d/d8/6x24-2.jpg/revision/latest/scale-to-width-down/350?cb=20180403140516',
+        'GA0624.jpg',
         '2010-05-20'
     ),
     (
@@ -325,7 +326,7 @@ VALUES
         19,
         3,
         'Bailey recruits the interns to create a series of social media videos informing teens about sexual health. The videos, filmed at Grey Sloan in front of a group of high schoolers, hit home as a student has medical complications during her visit. Elsewhere, Meredith and Maggie learn something new about Zola.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/1/17/19x03-1.jpg/revision/latest/scale-to-width-down/350?cb=20221012110417',
+        'GA1903.jpg',
         '2022-10-20'
     ),
     (
@@ -335,7 +336,7 @@ VALUES
         7,
         18,
         'A cataclysmic event shakes the doctors of Seattle Grace to the core, as Callie, on the verge of a life-changing moment with Arizona, envisions her hospital and friends as they have never been seen before.', 
-        'https://static.wikia.nocookie.net/greysanatomy/images/c/c2/7x18-12.png/revision/latest/scale-to-width-down/350?cb=20130210110814',
+        'GA0718.jpg',
         '2011-03-31'
     ),
     (
@@ -345,7 +346,7 @@ VALUES
         8,
         15,
         'In a final attempt to save Ericas life, Amelia arrives at Seattle Grace to beg Derek for help with the gliosarcoma case. Cristina and Owen engage in heated arguments during marriage counseling. Alex realizes that in order to be a good doctor, hell need to improve his people skills and Meredith is given a chance to shine when a man enters the ER after getting his hand stuck in meat grinder. Meanwhile, the residents continue to study for their upcoming oral boards.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/b/b5/8x15-16.png/revision/latest/scale-to-width-down/350?cb=20130210123601',
+        'GA0815.jpg',
         '2012-02-16'
     ),
     (
@@ -355,7 +356,7 @@ VALUES
         12,
         5,
         'In the midst of the sisters dinner party, Maggie ditches her cooking duties to rush to the hospital. Meanwhile, April steps in to help cook as an attempt to avoid Jackson and Arizona nervously waits to find out more about Callies new girlfriend.', 
-        'https://static.wikia.nocookie.net/greysanatomy/images/8/8a/12x05-1.jpg/revision/latest/scale-to-width-down/350?cb=20151016050619',
+        'GA1205.jpg',
         '2015-10-22'
     ),
     (
@@ -365,7 +366,7 @@ VALUES
         8,
         24,
         'Faced with a life-threatening situation, the doctors must fight to stay alive while trying to save the lives of their peers. Bailey and Ben make a decision regarding their relationship, and Teddy is presented with a tempting offer. Meanwhile, Richard plans a special dinner for the residents.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/d/d8/8x24-9.jpg/revision/latest/scale-to-width-down/350?cb=20180325155418',
+        'GA0824.jpg',
         '2012-05-17'
     ),
     (
@@ -375,7 +376,7 @@ VALUES
         1,
         1,
         'Meredith Grey, Izzie Stevens, George Malley, Cristina Yang, and Alex Karev become interns at Seattle Grace Hospital. Meredith discovers that her one night stand was actually with one of her bosses and she and her new friends discover that being a surgeon isnt as easy or fun as they thought it would be.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/2/2d/1x01-01.jpg/revision/latest/scale-to-width-down/350?cb=20140927134347',
+        'GA0101.jpg',
         '2005-03-27'
     ),
     (
@@ -385,7 +386,7 @@ VALUES
         17,
         8,
         'As traumas and pressure mount, Grey Sloan doctors try to find a path forward, and Richard questions his faith. Meanwhile, Jo, Link and Jackson play an unconventional drinking game.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/5/5a/17x08-1.jpg/revision/latest/scale-to-width-down/350?cb=20210301191907',
+        'GA1708.jpg',
         '2021-03-18'
     ), 
 
@@ -406,7 +407,6 @@ VALUES
         5,
         5,
         'As the rumor mill around the hospital continues to spiral out of control, Grey Sloan Memorial is flooded with injured firefighters from a nearby wildfire. Maggie struggles to keep things with Andrew professional at work; meanwhile, Jo questions Alexs priorities. Also, Alex decides to make a big step in his life.',
-        'https://static.wikia.nocookie.net/greysanatomy/images/f/f0/16x09-1.jpg/revision/latest/scale-to-width-down/350?cb=20191107191949',
         'S190505.jpg',
         '2015-11-19'
     ),
@@ -557,11 +557,12 @@ VALUES
         6,
         13,
         'Naomi returns to stand by Addisons side on her wedding day, Cooper struggles with the hardships of being a stay-at-home father, and Violet begins a new project close to her heart.',
-        'S190613.jpg',
+        'PP0613.jpg',
         '2013-01-22'
     );
 
 UNLOCK TABLES;
+
 
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;

@@ -5,13 +5,15 @@
 @section('content')
 <body>
     <main>
-        <img src="{{ asset('storage/img/<?= $episode->img ?>') }}" class="imgbigg">
-        <img src="{{asset('storage/img/PP0101.jpg') }}" alt="" class="imgbigg">
+        <div style="display: flex">
+        <img src="{{ asset('storage/img/' . $episode->img) }}" class="imgbigg">,
+
+        </div>
         <section>
         <h4>seizoen <?= $episode->season ?>, episode <?= $episode->episode ?></h4>
         <h2><?= $episode->title ?></h2>
         <div class="accent2"></div>
-        <p><?= $episode->discription ?></p>
+        <p><?= $episode->description ?></p>
         </section>
         <h2>info</h2>
         <div class="accent2"></div>

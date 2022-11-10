@@ -19,9 +19,10 @@ return new class extends Migration
             $table->string('serie_id');
             $table->string('season');
             $table->string('episode');
-            $table->string('description');
+            $table->longText('description');
             $table->string('img');
             $table->string('airDate');
+            $table->foreignId('personage_id')->nullable();
             $table->timestamps();
         });
     }
