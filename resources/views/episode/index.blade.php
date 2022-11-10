@@ -6,29 +6,46 @@
 
 <body>
     <main>
-        <section class="zoeken">
-            <div class="zoeken"><input type="text" placeholder="Search.." class="search">
-<button>zoeken</button></div>
+    <section class="zoeken">
+            <div class="">
+                <form method="POST" action="" class="zoeken">
+                    <select name="type" id="" class="filter">
+                    <option value="all">whole universe</option>
+                        <option value="grey's anatomy">Grey's anatomy</option>
+                        <option value="private practice">private practice</option>
+                        <option value="station 19">station 19</option>
+                    </select>
+                <input name="search" type="text" placeholder="Search.." class="search">
+                <button>zoeken</button>
+                </form>
+            </div>
         </section>
-        <section>
 
-        <? foreach ($episodes as $episode){
+       <section>
+        <?php
+    if(empty($episodes)){
+        echo "no results";
+    }else{
+    foreach ($episodes as $episode) {
     ?>
-<div class="episode2">
-    <img src="https://cdn1.edgedatg.com/aws/v2/abc/Station19/video/30440209/b2bfc9c85c68b1078dbd4af30fccd4bf/579x325-Q100_b2bfc9c85c68b1078dbd4af30fccd4bf.jpg" alt="episode image" class="episode_image">
-    <div class="episode_info2">
-        
-        <h4>Seizoen <?= $episode->season ?>, episode <?= $episode->episode ?></h4>
-        <h3><?= $episode->name ?></h3>
-        <p><?= $episode->discription ?></p>   <!-- aantal tekens beperken   -->
-    </div>
-</div>
+        <li class="episode2">
+        <img src="<?= $episode->img ?>" alt="episode image" class="episode_image">
+            <div class="episode_info2">
+                <h4>Seizoen <?= $episode->season ?>, episode <?= $episode->episode ?></h4>
+                <h3><?= $episode->name ?></h3>
+                <p><?= $episode->discription ?></p>   <!-- aantal tekens beperken   -->
+            </div>
+        </li>
+    <?php
+    }
+    }
+    ?>
 </section>
     </main>
 </body>
 
 <?
-}
+
 
 ?>
 @endsection

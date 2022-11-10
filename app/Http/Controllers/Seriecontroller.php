@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Serie;
 
 class SerieController extends Controller
 {
@@ -10,8 +12,10 @@ class SerieController extends Controller
     }
 
     public function detail($id) {
+        $serie = Serie::findOrFail($id);
         return view('serie.detail', [
-            'serie_id' => $id
+            'serie_id' => $id,
+            'serie' => $serie
         ]);
     }
 }

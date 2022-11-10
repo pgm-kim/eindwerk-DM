@@ -62,7 +62,7 @@
             <div class="form-flex">
             <div class="form-group">
                 <label>    
-                    Customer:
+                    personages:
                     <select name="customer_id">
                         <option value="">{{ __('Select personage...')__ }}</option>
                     @foreach($personages as $personage)

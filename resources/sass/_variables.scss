@@ -18,6 +18,10 @@ $line-height-base: 1.6;
     color: var(--darkblue);
 }
 
+p {
+    font-size: 16px;
+}
+
 .accenttext {
     color: var(--darkred);
 }
@@ -174,10 +178,18 @@ button {
     border-color: 3px solid #1A202C;
 }
 
+.filter {
+    width: 10rem;
+    padding: 0.45rem;
+    margin-right: 2rem;
+    border-color: 3px solid #1A202C;
+}
+
 .zoeken {
-    width:  33.5rem;
+    width:  40rem;
     margin: auto;
-    justify-content: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 .timeline {
@@ -203,4 +215,26 @@ button {
 .form-flex {
     display: flex;
     justify-content: space-between;
+}
+
+.infoCard {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #9B2C2C;
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    
+}
+
+.btn_center {
+    margin: auto;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.imgbigg {
+    width: 35rem;
+    border-radius: 10px;
 }

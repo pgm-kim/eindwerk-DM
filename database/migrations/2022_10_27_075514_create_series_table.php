@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('series', function (Blueprint $table) {
             $table->id();
-            $table->string('premiere date');
+            $table->string('premiereDate');
             $table->string('name');
             $table->string('description');
             $table->string('img');

@@ -1,7 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+ 
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use App\Models\Episode;
 
 class EpisodeController extends Controller
 {
@@ -11,7 +15,8 @@ class EpisodeController extends Controller
 
     public function detail($id) {
         return view('episode.detail', [
-            'episode_id' => $id
+            'episode_id' => $id,
+            'episode' => Episode::findOrFail($id)
         ]);
     }
 
