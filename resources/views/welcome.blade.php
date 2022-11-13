@@ -38,5 +38,11 @@
                 </div>
             </div>
 </section>
+    <section>
+    
+    <a href="/episode" style="text-decoration: none"><div style="display: flex"><button class="btn_center">search episode</button></div></a>
+    
+    </section>
+    </main>
     </body>
  @endsection

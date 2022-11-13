@@ -66,7 +66,7 @@
                 </label>
             </div>
             </div>
-            <button type="submit" class="button-right">upload</button>
+            <div style="display: flex"><button type="submit" class=" btnall">upload new episode</button></div>
         </form>
             </div>
         </div>

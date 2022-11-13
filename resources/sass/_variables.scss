@@ -239,6 +239,16 @@ button {
     padding: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-top: 2rem;
+}
+
+.btnall {
+    margin: auto;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 .imgbigg {
@@ -251,4 +261,16 @@ button {
     .imgbigg {
         width: 25rem;
     }
+}
+
+.btn3 {
+    background-color: var(--darkred);
+    color: var(--white);
+    border: 1px solid var(--darkred);
+    border-radius: 0.5px;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 4rem;
+
 }

@@ -13,8 +13,8 @@
         <h2>info</h2>
         <div class="accent2"></div>
         <section>
-            <div class="infoCard">director: <?= $serie->director ?></div>
-            <div class="infoCard">premiere date: <?= $serie->premiereDate?></div>
+            <div class="infoCard" style="font-weight:bold">director: <?= $serie->director ?></div>
+            <div class="infoCard" style="font-weight:bold">premiere date: <?= $serie->premiereDate?></div>
         </section>
         <h2>meet the cast</h2>
         <div class="accent2"></div>
