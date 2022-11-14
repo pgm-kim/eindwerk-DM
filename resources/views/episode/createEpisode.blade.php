@@ -61,7 +61,7 @@
             <div class="form-group">
                 <label>  
                 @foreach($personages as $personage)  
-                    <input type="checkbox" name="personages[]" value="{{ $personage->id }}"> {{ $personage->name }}<br>
+                    <input type="checkbox" name="personages[]" value="{{ $personage->id }}">{{ $personage->name }}<br>
                     @endforeach
                 </label>
             </div>

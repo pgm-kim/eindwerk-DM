@@ -574,6 +574,7 @@ CREATE TABLE `episode_personage` (
     `episode_id` int NOT NULL,
     `personage_id` int NOT NULL,
     PRIMARY KEY (`id`),
+    
     KEY `episodes`,`personage`  (`id`),
     CONSTRAINT `episodes_ibfk_1` FOREIGN KEY (`episodes_id`) REFERENCES `episodes` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -617,7 +618,6 @@ VALUES
 (232,30,3),(233,30,2),(234,30,22),(235,30,23),(236,30,16),(237,30,5),(238,30,18),(239,30,19),
 (240,31,2),(241,31,3),(242,31,16),(243,31,18),(244,31,17),(245,31,19),(246,31,22),(247,31,20),
 (248,32,16),(249,32,18),(250,32,19),(251,32,2),(252,32,3),(253,32,21),(254,32,22),(255,32,23),
-
 
 
 
