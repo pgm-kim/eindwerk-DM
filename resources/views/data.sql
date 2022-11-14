@@ -571,11 +571,11 @@ DROP TABLE IF EXISTS `episode_personage`;
 
 CREATE TABLE `episode_personage` (
     `id` int NOT NULL AUTO_INCREMENT,
-    `series_id` int NOT NULL,
+    `episode_id` int NOT NULL,
     `personage_id` int NOT NULL,
     PRIMARY KEY (`id`),
-    KEY `series_id` (`series_id`),
-    CONSTRAINT `episodes_ibfk_1` FOREIGN KEY (`series_id`) REFERENCES `series` (`id`)
+    KEY `episodes`,`personage`  (`id`),
+    CONSTRAINT `episodes_ibfk_1` FOREIGN KEY (`episodes_id`) REFERENCES `episodes` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 LOCK TABLES `episode_personage` WRITE;

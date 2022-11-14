@@ -53,5 +53,8 @@ class EpisodeController extends Controller
     
     public function save(Request $request) {
         dd($request->all());
+        
     }
+
+
 }
