@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('actor');
             $table->string('img');
-            $table->string('serie_id');
             $table->timestamps();
 
         });

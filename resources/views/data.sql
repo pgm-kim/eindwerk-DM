@@ -16,182 +16,155 @@ CREATE TABLE `personages` (
   `name` varchar(255) NOT NULL,
   `actor` varchar(255) NOT NULL,
   `img` varchar(255) DEFAULT NULL,
-  `series_id` int(11) NOT NULL,
-    PRIMARY KEY (`id`),
-    KEY `series_id` (`series_id`),
-    CONSTRAINT `personages_ibfk_1` FOREIGN KEY (`series_id`) REFERENCES `series` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
-
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 LOCK TABLES `personages` WRITE;
 /*!40000 ALTER TABLE `personages` DISABLE KEYS */;
 
-INSERT INTO `personages` (`id`, `name`, `actor`, `img`? `series_id`)
+INSERT INTO `personages` (`id`, `name`, `actor`, `img`)
 VALUES
         (
         1,
         'meredith grey',
         'Ellen Pompeo',
-        'GA1.jpg',
-        '1'
+        'GA1.jpg'
     ),
     (
         2,
         'addison montgomery',
         'Kate Walsh',
-        'GU00.npg',
-        '1'
+        'GU00.npg'
     ),
     (
         3,
         'amelia shepherd',
         'Caterina Scorsone',
-        'GA3.jpg',
-        '1'
+        'GA3.jpg'
     ),
     (
         4,
         'owen hunt',
         'Kevin McKidd',
-        'GA4.jpg',
-        '1'
+        'GA4.jpg'
     ),
     (
         5,
         'miranda bailey',
         'Chandra Wilson',
-        'GA5.jpg',
-        '1'
+        'GA5.jpg'
     ),
     (
         6,
         'jo wilson',
         'Camilla Luddington',
-        'GA6.jpg',
-        '1'
+        'GA6.jpg'
     ),
     (
         7,
         'teddy altman',
         'Kim Raver',
-        'GA7.jpg',
-        '1'
+        'GA7.jpg'
     ),
     (
         8,
         'levi schmitt',
         'Jake Borelli',
-        'GA8.jpg',
-        '1'
+        'GA8.jpg'
     ),
     /*station 19*/
     (
         9,
         'ben warren', 'Jason George',
-        'S199.jpg',
-        '3'
+        'S199.jpg'
     ),
     (10,
     'maya bishop',
     'Danielle Savre',
-    'S1910.jpg',
-    '3'
+    'S1910.jpg'
     ),
     (
         11,
         'Andy Herrera',
         'Jaina Lee Ortiz',
-        'S1911.jpg',
-        '3'
+        'S1911.jpg'
     ),
     (
         12,
         'Jack Gibson',
         'Grey Damon',
-        'S1912.jpg',
-        '3'
+        'S1912.jpg'
     ),
     (
         13,
         'Victoria Hughes',
         'Barrett Doss',
-        'S1913.jpg',
-        '3'
+        'S1913.jpg'
     ),
     (
         14,
         'Travis Montgomery',
         'Jay Hayden',
-        'S1914.jpg',
-        '3'
+        'S1914.jpg'
     ),
     (
         15,
         'Carina Deluca',
         'stefania spaminato',
-        'S1915.jpg',
-        '3'
+        'S1915.jpg'
     ),
     /*private practice */
     (
         16,
         'Charlotte King',
         'KaDee Strickland',
-        'GU00.png',
-        '2'
+        'GU00.png'
     ),
     (
         17,
         'pete wilder',
         'Tim Daly',
-        'GU00.png',
-        '2'
+        'GU00.png'
     ),
     (
         18,
         'cooper freedman',
         'paul adelstein',
-        'GU00.png',
-        '2'
+        'GU00.png'
     ),
     (
         19,
         'violet turner',
         'amy brenneman',
-        'GU00.png',
-        '2'
+        'GU00.png'
     ),
     (
         20,
         'naomi bennet',
         'audra mcdonald',
-        'GU00.png',
-        '2'
+        'GU00.png'
     ),
     (
         21,
         'jake reilly',
         'chris lowell',
-        'GU00.png',
-        '2'
+        'GU00.png'
     ),
     (
         22,
         'sam bennett',
         'taye diggs',
-        'GU00.png',
-        '2'
+        'GU00.png'
     ),
     (
         23,
         'sheldon Wallace',
         'brain fallon',
-        'GU00.png',
-        '2'
+        'GU00.png'
     );
 
 
-/*!40000 ALTER TABLE `series` ENABLE KEYS */;
+/*!40000 ALTER TABLE `personages` ENABLE KEYS */;
 UNLOCK TABLES;
 
 # Dump of table series
@@ -598,16 +571,16 @@ DROP TABLE IF EXISTS `episode_personage`;
 
 CREATE TABLE `episode_personage` (
     `id` int NOT NULL AUTO_INCREMENT,
-    `episodes_id` int NOT NULL,
-    `personages_id` int NOT NULL,
+    `episode_id` int NOT NULL,
+    `personage_id` int NOT NULL,
     PRIMARY KEY (`id`),
-    KEY `episodes`,`personages`  (`id`),
-    CONSTRAINT `episode_personage_ibfk_1` FOREIGN KEY (`episode_personage_id`) REFERENCES `episode_personage` (`id`)
+    KEY `episodes`,`personage`  (`id`),
+    CONSTRAINT `episodes_ibfk_1` FOREIGN KEY (`episodes_id`) REFERENCES `episodes` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 LOCK TABLES `episode_personage` WRITE;
 /*!40000 ALTER TABLE `episodes` DISABLE KEYS */;
-INSERT INTO `episode_personage` (`id`, `series_id`, `personages_id`)
+INSERT INTO `episode_personage` (`id`, `series_id`, `personage_id`)
 VALUES
 
 (1,1,1),(2,1,4),(3,1,5),(4,1,6),(5,1,8),(6,1,9),(7,1,11),(8,1,13),
@@ -643,10 +616,10 @@ VALUES
 (224,29,18),(225,29,2),(226,29,22),(227,29,21),(228,29,16),(229,29,5),(230,29,23),(231,29,19),
 (232,30,3),(233,30,2),(234,30,22),(235,30,23),(236,30,16),(237,30,5),(238,30,18),(239,30,19),
 (240,31,2),(241,31,3),(242,31,16),(243,31,18),(244,31,17),(245,31,19),(246,31,22),(247,31,20),
-(248,32,16),(249,32,18),(250,32,19),(251,32,2),(252,32,3),(253,32,21),(254,32,22),(255,32,23);
+(248,32,16),(249,32,18),(250,32,19),(251,32,2),(252,32,3),(253,32,21),(254,32,22),(255,32,23),
 
 
-UNLOCK TABLES;
+
 
 
 
